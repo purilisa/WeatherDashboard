@@ -1,0 +1,100 @@
+
+
+.cityList {}
+
+.cityWeather {}
+
+.fivedayforecast {
+    padding:5px;
+}
+
+.citySearch {
+    text-align: left;
+    margin-left: 0rem;
+    font-size: 1rem;
+    width:15px;
+}
+
+/* .cityList {
+    text-align: left;
+    margin-left: 0rem;
+    font-size: 1rem;
+    border-style: solid;
+    padding: 5rem;
+} */
+/* 
+.headertext {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    background-color: blue;
+} */
+
+.jumbotronbackground{
+    background-color: rgb(36, 47, 212);
+    color:White;
+    padding:1rem;
+    text-align: center;
+
+}
+body {
+    background-color: black;
+}
+
+.searchHistory {
+    background-color: red;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.weatherPortal {
+    background-color:rgb(236, 239, 241);
+    padding: 1rem;
+    padding-left:1rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    width:30px;
+    text-align: left;
+    text-emphasis: strong;
+    font-size: large;
+    color: Black;
+
+   
+}
+.historylist{
+    width: 10rem;
+    margin-top:0rem;
+    text-align:left;
+    margin-right : 1rem;
+}
+
+.submitbutton{
+    margin-bottom:1rem;
+    margin-left:1rem;
+    /* margin-top: 1rem; */
+    margin-right:1rem;
+    color: white;
+}
+
+.form-control {
+    margin-left:1rem;
+}
+
+.cardheading{
+    margin-left:17rem;
+    color: white;
+}
+
+.citySearch {
+    margin-bottom: 0rem;
+}
+
+.fivedayforecast {
+    margin-left: 15rem;
+}
+
+.fa-search{
+    color: white;
+}

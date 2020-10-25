@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid-p-0" id="pageTitle">
+        <div class="row">
+            <div class="col-12 ">
+                <header class="jumbotron jumbotronbackground ">
+                    <h1 class="display-5">Weather Dashboard</h1>
+                </header>
+            </div>
+            <div class="col-2 container-fluid-p-0" id="citySearch">
+                <div class="form-group">
+
+
+                    <label for="citySearchname "></label>
+                    <input type="text" class="form-control " id="citySearchname" name="citySearchname" placeholder="City">
+                    <!-- <button id="citySearchButton" name="citySearchButton">Submit</button> -->
+                    <button type="submit" class="btn btn-default submitbutton" id="citySearchButton">
+                            <i class="fa fa-search"></i> Search</button>
+                   
+
+                    <div class="col-2 container-fluid-p-1 " id="searchHistory">
+                        <ul class="list-group history"> 
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 weatherPortal" id="weatherPortal">
+                <!-- <section class="weatherPortal">cityWeather</section> -->
+            </div>
+
+            <div class="col-10">
+                <div class="container-fluid-p-0">
+                    <div class="row cardheading"><h4>Five Day Forecast</h4></div>
+                    <div class="row fivedayforecast" id="fivedayforecast">
+
+                        <!-- <div class="col-lg-2 col-md-3 col-sm-6" id="card1">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <img src="#placeholder" alt="" class="img-fluid">
+                                    <div class="card-title">
+                                        <h4>title1</h4>
+                                    </div>
+                                    <div class="card-text">sample text</div>
+                                    <a href="#" class="btn btn-success"> click</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 col-sm-6" id="card2">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <img src="#placeholder" alt="" class="img-fluid">
+                                    <div class="card-title">
+                                        <h4>title1</h4>
+                                    </div>
+                                    <div class="card-text">sample text</div>
+                                    <a href="#" class="btn btn-success"> click</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2  col-md-3 col-sm-6" id="card3">
+                            <div class="card text-center">
+                                <div class="card-block">
+                                    <img src="#placeholder alt=" " class="img-fluid ">
+                                    <div class="card-title ">
+                                        <h4>title1</h4>
+                                    </div>
+                                    <div class="card-text ">sample text</div>
+                                    <a href="# " class="btn btn-success "> click</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 " id="card4 ">
+                            <div class="card text-center ">
+                                <div class="card-block ">
+                                    <img src="#placeholder " alt=" " class="img-fluid ">
+                                    <div class="card-title ">
+                                        <h4>title1</h4>
+                                    </div>
+                                    <div class="card-text ">sample text</div>
+                                    <a href="# " class="btn btn-success "> click</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 " id="card5 ">
+                            <div class="card text-center ">
+                                <div class="card-block ">
+                                    <img src="#placeholder " alt=" " class="img-fluid ">
+                                    <div class="card-title ">
+                                        <h4>title1</h4>
+                                    </div>
+                                    <div class="card-text ">sample text</div>
+                                    <a href="# " class="btn btn-success "> click</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js "></script>
+    <script type="text/javascript " src="./Assets/js/script.js "></script>
+
+</body>
+
+</html>

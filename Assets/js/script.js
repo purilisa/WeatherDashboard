@@ -83,6 +83,35 @@ $(document).ready(function () {
         });
     }
 
+    function getUVIndex(lat, long) {
+        $.ajax({
+            url: " http://api.openweathermap.org/data/2.5/uvi?" + "lat=" + lat + "&lon=" + long + OpenWeatherKey,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response);
+            var wthUvIndex = $("<p>").attr('id', 'uvindexId').text("UV Index: " + response.value);
+            $("#weatherPortal").append(wthUvIndex);
+            $("#uvindexId").css("width", "8rem");
+
+
+            var uvindex = response.value;
+            //uv index colors based on https://www.epa.gov/sunsafety/uv-index-scale-0
+            $("#uvindex").css("color", "black");
+            if (uvindex < 3) {
+                $("#uvindexId").css("background-color", "lightgreen");
+            }
+            else if (uvindex < 6) {
+                $("#uvindexId").css("background-color", "yellow");
+            }
+            else if (uvindex < 8) {
+                $("#uvindexId").css("background-color", "orange");
+            }
+            else {
+                $("#uvindexId").css("background-color", "red");
+            }
+
+        });
+    }
 
 
     function listCities(city) {
